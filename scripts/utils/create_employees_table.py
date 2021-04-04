@@ -11,17 +11,17 @@ DB_SETTINGS = {
 connection = psycopg2.connect(**DB_SETTINGS)
 cursor = connection.cursor()
 
-# Create employees table
-query = """
-    CREATE TABLE employees (
-        id SERIAL PRIMARY KEY,
-        first_name varchar(255),
-        last_name varchar(255),
-        salary numeric(10, 2),
-        grade varchar(10)
-    )
-"""
-cursor.execute(query)
+# # Create employees table
+# query = """
+#     CREATE TABLE employees (
+#         id SERIAL PRIMARY KEY,
+#         first_name varchar(255),
+#         last_name varchar(255),
+#         salary numeric(10, 2),
+#         grade varchar(10)
+#     )
+# """
+# cursor.execute(query)
 
 # Insert some data
 query = """
